@@ -1,0 +1,21 @@
+Treetop Parsing Expression Grammar (PEG) Comand Line Compiler
+Usage: tt [options] grammar_file[.treetop|.tt] ...
+
+Examples:
+  tt foo.tt               # 1 grammar -> 1 parser source
+  tt foo bar.treetop      # 2 grammars -> 2 separate parsers
+  tt -o alt_name.rb foo   # alternately named output file
+
+
+NOTE: while treetop grammar files *must* have one of the following
+filename extensions, the extension name is not required when calling
+the compiler with grammar file names.
+
+  Valid extensions: .treetop, .tt
+
+
+Options:
+    -o, --output FILENAME            Write parser source to FILENAME
+    -f, --force                      Overwrite existing output file(s)
+    -v, --version                    Show Treetop version
+    -h, --help                       Show this help message
